@@ -3,9 +3,10 @@ package com.laptrinhandcuocsong.webbansach.dao;
 import com.laptrinhandcuocsong.webbansach.entity.ChiTietDonHang;
 import com.laptrinhandcuocsong.webbansach.entity.Quyen;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@RepositoryRestResource(path = "quyen")
 public interface QuyenRepository extends JpaRepository<Quyen,Integer> {
 
 }
